@@ -1,0 +1,48 @@
+:root {
+    --clr--neutral-primary-about:rgb(30, 26, 26);
+    --clr--neutral-secondary-about:grey;
+    --clr--accent-primary-about:rgb(226, 238, 240);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    line-height: 1.6;
+    background-color: var(--clr--accent-primary-about);
+    font-family: sans-serif;
+}
+
+/* <!-- ABOUT COUNTRY BOX --> */
+
+.blank-about-box {
+    color: var(--clr--neutral-secondary-about);
+    background-image: url(/assets/card-img-mada.JPG);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    border-radius: 2%;
+}
+.blank-about-title {
+    color: var(--clr--accent-primary-about)
+}
+.blank-about-content {
+    color: var(--clr--accent-primary-about)
+}
+
+    /* DIFFERENT CITIES BOX */
+
+.blank-city-box {
+    margin-top: 10%;
+    background: url(/assets/header-tana-2.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
