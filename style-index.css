@@ -40,9 +40,17 @@ body {
     /* DIFFERENT CITIES BOX */
 
 .blank-city-box {
-    margin-top: 10%;
-    background: url(/assets/header-tana-2.jpg);
-    width: 100%;
-    height: 100%;
+    display: flex;
+    border:20px;
+    margin: 0;
+    background-image: url(assets/header-nosy-be-2.JPG);
+    width: 100vw;
+    height: 8vw;
     background-size: cover;
+}
+.blank-city-header {
+    display: flex;
+    text-align: center;
+    color:white;
+
 }
