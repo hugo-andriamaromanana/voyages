@@ -4,53 +4,64 @@
     --clr--accent-primary-about:rgb(226, 238, 240);
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 body {
-    margin:0;
-    display: grid;
-    min-height: 100vh;
-    place-items: center;
-    line-height: 1.6;
-    background-color: var(--clr--accent-primary-about);
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    color: #000000;
+ }
+
+        /* CITIES TAB */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* <!-- ABOUT COUNTRY BOX --> */
-
-.blank-about-box {
-    color: var(--clr--neutral-secondary-about);
-    background-image: url(/assets/card-img-mada.JPG);
-    background-size: cover;
-    padding: 10rem 0 0;
-    max-width: 35ch;
-    border-radius: 2%;
-}
-.blank-about-title {
-    color: var(--clr--accent-primary-about)
-}
-.blank-about-content {
-    color: var(--clr--accent-primary-about)
+.countries {
+   padding: 2rem 0;
 }
 
-    /* DIFFERENT CITIES BOX */
-
-.blank-city-box {
-    display: flex;
-    border:20px;
-    margin: 0;
-    background-image: url(assets/header-nosy-be-2.JPG);
-    width: 100vw;
-    height: 8vw;
-    background-size: cover;
+.header {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
 }
-.blank-city-header {
-    display: flex;
-    text-align: center;
-    color:white;
 
+.countries_slider {
+   margin: 20px 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+a {
+  cursor: pointer;
+  decoration: none;
+}
+
+a:hover {
+  font-size: 18px;
+  border-bottom: solid 2px #000;
+}
+
+.country {
+  margin: 20px 0;
+  display: grid;
+  grid-template: repeat(1, 250px)/repeat(3, 1fr);
+  gap: 10px;
+  justify-content: space-around;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  
+}
+
+.active {
+  font-size: 18px;
+  border-bottom: solid 2px #000;
 }
