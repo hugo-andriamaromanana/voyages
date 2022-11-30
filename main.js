@@ -1,19 +1,19 @@
-const content = document.querySelectorAll('.country');
-const tab = document.querySelectorAll('.link');
-const slider = document.querySelector('.countries_slider');
+const content = document.querySelectorAll('.blank-country');
+const tab = document.querySelectorAll('.blank-link');
+const slider = document.querySelector('.blank-countries-slider');
 
 function hideTabContent() {
   content.forEach(item => {
     item.style.display = 'none';
   });
   tab.forEach(item => {
-    item.classList.remove('active');
+    item.classList.remove('blank-active');
   });
 }
 
 function showTabContent(i = 0) {
   content[i].style.display = 'grid';
-  tab[i].classList.add('active');
+  tab[i].classList.add('blank-active');
 }
 
 

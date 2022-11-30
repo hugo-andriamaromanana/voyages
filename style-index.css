@@ -4,22 +4,22 @@ body {
   color: #000000;
 }
 
-.container {
+.blank-container {
 max-width: 800px;
 margin: 0 auto;
 }
 
-.countries {
+.blank-countries {
  padding: 2rem 0;
 }
 
-.header {
+.blank-header {
 font-size: 18px;
 text-align: center;
 font-weight: bold;
 }
 
-.countries_slider {
+.blank-countries-slider {
  margin: 20px 0;
  display: flex;
  flex-wrap: wrap;
@@ -28,16 +28,16 @@ font-weight: bold;
  font-weight: bold;
 }
 
-a {
+.blank-countries-slider a {
 cursor: pointer;
 }
 
-a:hover {
+.blank-countries-slider a:hover {
 font-size: 18px;
 border-bottom: solid 2px #000;
 }
 
-.country {
+.blank-country {
 margin: 20px 0;
 display: grid;
 grid-template: repeat(1, 250px)/repeat(3, 1fr);
@@ -45,14 +45,14 @@ gap: 10px;
 justify-content: space-around;
 }
 
-img {
+.blank-country img {
 height: 100%;
 width: 100%;
 object-fit: cover;
 
 }
 
-.active {
+.blank-active {
 font-size: 18px;
 border-bottom: solid 2px #000;
 }
