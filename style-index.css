@@ -1,58 +1,116 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  color: #000000;
-}
+:root {
+    --clr--neutral-primary-about:rgb(30, 26, 26);
+    --clr--neutral-secondary-about:grey;
+    --clr--accent-primary-about:rgb(226, 238, 240);
+  }
 
-.blank-container {
-max-width: 800px;
-margin: 0 auto;
-}
+  .blank-ambassade-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 80vh;
+    color: var(--clr--accent-primary-about);
+    font-family: 'Raleway';
+    font-size: 2.5rem;
+    --borderWidth: 3px;
+    background: var(--clr--neutral-primary-about);
+    position: absolute;
+    border-radius: 15px;
+    flex-direction: row;
+  }
 
-.blank-countries {
- padding: 2rem 0;
-}
+  .blank-ambassade-box-left {
+    flex-direction: column;
+    border: solid;
+    box-sizing: border-box;
+    width: 20vw;
+    height: 70vh;
+    border-color: var(--clr--neutral-primary-about);
+  }
 
-.blank-header {
-font-size: 18px;
-text-align: center;
-font-weight: bold;
-}
+  .blank-ambassade-sommaire {
+    box-sizing: border-box;
+    width: 100%;
+    border: solid 10px;
+    border-color: var(--clr--neutral-primary-about);
+    align-items: flex-start;
+    color: var(--clr--accent-primary-about);
+    background-color: var(--clr--neutral-primary-about);
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+  }
 
-.blank-countries-slider {
- margin: 20px 0;
- display: flex;
- flex-wrap: wrap;
- justify-content: space-around;
- font-size: 16px;
- font-weight: bold;
-}
+  .blank-ambassade {
+    width: 20vw;
+    height: 30vh;
+    border-radius: 25px;
+    box-sizing: border-box;
+    border: solid 10px;
+    padding: 5px;
+    color: var(--clr--neutral-primary-about);
+  }
 
-.blank-countries-slider a {
-cursor: pointer;
-}
+  .blank-ambassade-box-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid;
+    box-sizing: border-box;
+    width: 35vw;
+    height: 70vh;
+    border-color: var(--clr--neutral-primary-about);
+  }
 
-.blank-countries-slider a:hover {
-font-size: 18px;
-border-bottom: solid 2px #000;
-}
+  .blank-ambassade-maps {
+    width: 23vw;
+    height: 35vh;
+    box-sizing: border-box;
+    border: solid 10px;
+    border-color: var(--clr--neutral-primary-about);
+    border-radius: 15px;
+  }
 
-.blank-country {
-margin: 20px 0;
-display: grid;
-grid-template: repeat(1, 250px)/repeat(3, 1fr);
-gap: 10px;
-justify-content: space-around;
-}
+  .blank-ambassade-contact {
+    text-align: center;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: solid 10px;
+    border-color: var(--clr--neutral-primary-about);
+    margin: 10px 0;
+    text-decoration: underline;
+  }
 
-.blank-country img {
-height: 100%;
-width: 100%;
-object-fit: cover;
+  .blank-ambassade-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-}
+  .blank-ambassade-adresse {
+    font-size: 15px;
+    box-sizing: border-box;
+    border: solid 5px;
+    border-color: var(--clr--neutral-primary-about);
+  }
 
-.blank-active {
-font-size: 18px;
-border-bottom: solid 2px #000;
-}
+  .blank-ambassade-numero {
+    font-size: 15px;
+    box-sizing: border-box;
+    border: solid 5px;
+    border-color: var(--clr--neutral-primary-about);
+    margin-right: 20px;
+    text-align: start;
+  }
+
+  .blank-ambassade-site {
+    font-size: 15px;
+    box-sizing: border-box;
+    border: solid 5px;
+    border-color: var(--clr--neutral-primary-about);
+  }
+
+  .icon {
+    margin-right: 10px;
+  }
