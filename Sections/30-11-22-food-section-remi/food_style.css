@@ -13,7 +13,7 @@ html {
     flex-direction: row;
     justify-content: center;
     margin-top: 800px;
-    background: url(/assets/food_table.jpg);
+    background: url(assets/food_table.jpg);
     background-size: 100%;
 }
 
