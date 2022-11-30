@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {    
+    text-decoration: none;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+.blank-food {
+    padding: 5% 15%;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 800px;
+    background: url(/assets/food_table.jpg);
+    background-size: 100%;
+}
+
+.blank-food img {  
+    height: 250px;
+    width: auto;
+    margin: 0 50px;
+    position: relative;
+}
