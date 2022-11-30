@@ -169,13 +169,11 @@ li a {
 
 /* ##### Carousel ###### */
 
-
-
 .container-right {
   position: relative;
   perspective: 1000px;
-  margin-left: -150px;
-  margin-top: 50px;
+  margin-left: 450px;
+  margin-top: 30px;
 }
 
 #carousel {
@@ -233,15 +231,62 @@ li a {
 
 /* ##### Carousel END ##### */
 
- /* ############# */
- 
- 
- 
- /* ############# */
+/* ##### Cities ##### */
 
-/*  */
-/*  */
-/*  */
+.blank-container {
+  max-width: 800px;
+  margin: 0 auto;
+  }
+  
+  .blank-countries {
+   padding: 2rem 0;
+  }
+  
+  .blank-header {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  }
+  
+  .blank-countries-slider {
+   margin: 20px 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   font-size: 16px;
+   font-weight: bold;
+  }
+  
+  .blank-countries-slider a {
+  cursor: pointer;
+  }
+  
+  .blank-countries-slider a:hover {
+  font-size: 18px;
+  border-bottom: solid 2px #000;
+  }
+  
+  .blank-country {
+  margin: 20px 0;
+  display: grid;
+  grid-template: repeat(1, 250px)/repeat(3, 1fr);
+  gap: 10px;
+  justify-content: space-around;
+  }
+  
+  .blank-country img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  }
+  
+  .blank-active {
+  font-size: 18px;
+  border-bottom: solid 2px #000;
+  }
+
+/* ##### END Cities ##### */
+  
 
 /* ############ FOOD SECTION ###########*/
 
@@ -264,6 +309,7 @@ li a {
 
 /* ############ END FOOD SECTION ###########*/
 
+/* ############ END MAIN ###########*/
 
 /* ############ FOOTER ###########*/
 
