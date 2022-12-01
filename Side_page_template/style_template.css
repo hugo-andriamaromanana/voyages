@@ -10,6 +10,9 @@ body {
   font-family: "Poppins";
   color: rgb(201, 201, 201);
 }
+main{
+  margin-top: var(--height-menu);
+}
 
 section {
   margin: 3vh 2vw;
@@ -26,12 +29,12 @@ h1 {
 
 
 :root {
-  --height-menu: 60px;
+  --height-menu: 7.89vh;
   --bcg-color-navbar: transparent;
-  --font-color-navbar: white;
-  --bcg-color-sub-menu: rgba(255, 255, 255, 0.7);
-  --font-color-sub-menu: rgba(33, 112, 214, 0.8);
-  --border-bottom-color: rgba(33, 112, 214, 0.8);
+  --font-color-navbar: rgb(0, 0, 255);
+  --bcg-color-sub-menu: rgba(80, 80, 80, 0.7);
+  --font-color-sub-menu: rgba(0, 0, 255, 0.7);
+  --border-bottom-color: rgba(0, 0, 0, 0.8);
 
 }
 
@@ -44,8 +47,10 @@ h1 {
 nav {
   width: 100%;
   font-size: 18px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
 }
 
 nav > ul {
@@ -67,7 +72,7 @@ nav > ul > li {
 }
 
 nav > ul > li:hover > a {
-  color: #2169ec;
+  color: var(--font-color-navbar);
 }
 
 nav > ul > li > a {
@@ -116,6 +121,7 @@ li a {
   background-color: var(--bcg-color-sub-menu);
   position:relative;
   z-index: 999;
+  backdrop-filter: blur(15px);
 }
 
 .dropdown-1:hover > .sub-menu {
@@ -125,20 +131,20 @@ li a {
 @keyframes submenuappear {
   0% {
     box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0);
-    border-top: 3px solid #2169ec;
+    border-top: 3px solid var(--border-bottom-color);
   }
   30% {
     box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
   }
   100% {
     max-height: 50em;
-    border-top: 3px solid #2169ec;
+    border-top: 3px solid var(--border-bottom-color);
     box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
   }
 }
 
 .sub-menu > li:hover {
-  background-color: rgba(33, 105, 236, 0.3);
+  background-color: var(--bcg-color-sub-menu-hover);
   position: relative;
   z-index: 999;
 }
@@ -153,7 +159,8 @@ li a {
 }
 
 .sub-menu > li:hover > a {
-  color: var(--font-color-sub-menu);
+  color: var(--bcg-color-sub-menu);
+  background-color: var(--font-color-sub-menu);
 }
 
 /* #############End NAVBAR ###########*/
@@ -165,6 +172,7 @@ li a {
   flex-direction: row;
   padding: 20px 50px;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .container-left {
@@ -181,8 +189,13 @@ li a {
 .container-right {
   position: relative;
   perspective: 1000px;
-  margin-left: 450px;
-  margin-top: 30px;
+  margin-left: 29.2vw;
+  margin-top: 8vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform: translate(-50%, -50%);
+
 }
 
 #carousel {
@@ -192,21 +205,21 @@ li a {
   transform-style: preserve-3d;
   transition: transform 1s;
   transform: rotateY(-360deg) translateZ(+300px);
-  animation: animate 25s steps(10000, end) infinite;
+  animation: animate 60s steps(100000, end) infinite;
 }
 #carousel:hover {
   animation-play-state: paused;
 }
 #carousel div {
   display: block;
-  height: 100px;
-  width: 100px;
+  height: 13.1vh;
+  width: 6.5vw;
   position: absolute;
   border: 0px solid #000;
 }
 #carousel div img {
-  width: 150px;
-  height: 100px;
+  width:  9.76vw;
+  height: 13.1vh;
   border-radius: 5%;
   object-fit: cover;
   cursor: pointer;
@@ -214,28 +227,40 @@ li a {
   z-index: -1;
 }
 #carousel div:nth-child(1) {
-  transform: rotateY(0deg) translateZ(250px);
+  transform: rotateY(0deg) translateZ(32.9vh);
 }
 #carousel div:nth-child(2) {
-  transform: rotateY(60deg) translateZ(250px);
+  transform: rotateY(60deg) translateZ(32.9vh);
 }
 #carousel div:nth-child(3) {
-  transform: rotateY(120deg) translateZ(250px);
+  transform: rotateY(120deg) translateZ(32.9vh);
 }
 #carousel div:nth-child(4) {
-  transform: rotateY(180deg) translateZ(250px);
+  transform: rotateY(180deg) translateZ(32.9vh);
 }
 #carousel div:nth-child(5) {
-  transform: rotateY(240deg) translateZ(250px);
+  transform: rotateY(240deg) translateZ(32.9vh);
 }
 #carousel div:nth-child(6) {
-  transform: rotateY(300deg) translateZ(250px);
+  transform: rotateY(300deg) translateZ(32.9vh);
 }
-@keyframes animate {
+@-webkit-keyframes animate {
   from {
+    transform-origin: 30% 25%;
     transform: rotateY(0deg);
   }
   to {
+    transform-origin: 30% 25%;
+    transform: rotateY(-360deg);
+  }
+}
+@keyframes animate {
+  from {
+    transform-origin: 30% 25%;
+    transform: rotateY(0deg);
+  }
+  to {
+    transform-origin: 30% 25%;
     transform: rotateY(-360deg);
   }
 }
@@ -244,16 +269,17 @@ li a {
 
 /* ##### Cities ##### */
 
-.blank-container {
+.italie-container {
   max-width: 800px;
   margin: 0 auto;
   }
   
-  .blank-countries {
+  .italie-countries {
    padding: 2rem 0;
+   
   }
   
-  .blank-header {
+  .italie-header {
   font-size: 18px;
   text-align: center;
   font-weight: bold;
@@ -261,7 +287,7 @@ li a {
   font-size: 50px;
   }
   
-  .blank-countries-slider {
+  .italie-countries-slider {
    margin: 20px 0;
    display: flex;
    flex-wrap: wrap;
@@ -272,29 +298,31 @@ li a {
    align-items: center;
   }
   
-  .blank-countries-slider a {
+  .italie-countries-slider a {
   cursor: pointer;
+  transition: 0.15s;
   }
   
-  .blank-countries-slider a:hover {
+  .italie-countries-slider a:hover {
   font-size: 18px;
   }
   
-  .blank-country {
+  .italie-country {
   margin: 20px 0;
   display: grid;
   grid-template: repeat(1, 250px)/repeat(3, 1fr);
   gap: 10px;
   justify-content: space-around;
+  transition: all 1s;
   }
   
-  .blank-country img {
+  .italie-country img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   }
   
-  .blank-active {
+  .italie-active {
   font-size: 18px;
   border: solid 1px;
   padding: 5px;
@@ -305,7 +333,7 @@ li a {
 
 /* ##### AMBASSADE ##### */
 
-.blank-ambassade-box {
+.italie-ambassade-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -316,13 +344,13 @@ li a {
   flex-direction: row;
 }
 
-.blank-ambassade-box-left {
+.italie-ambassade-box-left {
   flex-direction: column;
   box-sizing: border-box;
   width: 20vw;
 }
 
-.blank-ambassade-sommaire {
+.italie-ambassade-sommaire {
   box-sizing: border-box;
   width: 100%;
   align-items: flex-start;
@@ -331,7 +359,7 @@ li a {
   line-height: 20px;
 }
 
-.blank-ambassade {
+.italie-ambassade {
   width: 20vw;
   height: 30vh;
   border-radius: 25px;
@@ -339,7 +367,7 @@ li a {
   padding: 5px;
 }
 
-.blank-ambassade-box-right {
+.italie-ambassade-box-right {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -347,14 +375,14 @@ li a {
   width: 35vw;
 }
 
-.blank-ambassade-maps {
+.italie-ambassade-maps {
   width: 23vw;
   height: 35vh;
   box-sizing: border-box;
   border-radius: 15px;
 }
 
-.blank-ambassade-contact {
+.italie-ambassade-contact {
   text-align: center;
   font-size: 20px;
   box-sizing: border-box;
@@ -363,7 +391,7 @@ li a {
   font-size: 30px;
 }
 
-.blank-ambassade-info {
+.italie-ambassade-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -371,19 +399,19 @@ li a {
   line-height: 20px;
 }
 
-.blank-ambassade-adresse {
+.italie-ambassade-adresse {
   font-size: 15px;
   box-sizing: border-box;
 }
 
-.blank-ambassade-numero {
+.italie-ambassade-numero {
   font-size: 15px;
   box-sizing: border-box;
   margin-right: 20px;
   text-align: start;
 }
 
-.blank-ambassade-site {
+.italie-ambassade-site {
   font-size: 15px;
   box-sizing: border-box;
 }
@@ -397,7 +425,7 @@ li a {
 
 /* ############ FOOD SECTION ###########*/
 
-.blank-food {
+.italie-food {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -406,7 +434,7 @@ li a {
   margin: 100px 0;
 }
 
-.blank-food img {  
+.italie-food img {  
   height: 250px;
   width: auto;
   margin: 0 50px;
