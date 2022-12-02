@@ -54,6 +54,7 @@ nav {
   font-size: 18px;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 nav > ul {
@@ -203,6 +204,7 @@ li a {
   transition: transform 1s;
   transform: rotateY(-360deg) translateZ(+300px);
   animation: animate 25s steps(10000, end) infinite;
+  z-index: 0;
 }
 #carousel:hover {
   animation-play-state: paused;
@@ -340,14 +342,15 @@ li a {
   text-align: center;
   font-size: 20px;
   line-height: 20px;
+  padding: 5px;
 }
 
 .blank-ambassade {
   width: 20vw;
   height: 30vh;
-  border-radius: 25px;
+  border-radius: 15px;
   box-sizing: border-box;
-  padding: 5px;
+  box-shadow: -10px 5px 10px #b8b6b6;
 }
 
 .blank-ambassade-box-right {
@@ -363,6 +366,7 @@ li a {
   height: 35vh;
   box-sizing: border-box;
   border-radius: 15px;
+  box-shadow: 10px 5px 10px  #b8b6b6;
 }
 
 .blank-ambassade-contact {
@@ -385,6 +389,8 @@ li a {
 .blank-ambassade-adresse {
   font-size: 15px;
   box-sizing: border-box;
+  margin-top: 2px;
+  margin-left: 2px;
 }
 
 .blank-ambassade-numero {
@@ -392,12 +398,14 @@ li a {
   box-sizing: border-box;
   margin-right: 20px;
   text-align: start;
+  margin-left: 2px;
 }
 
 .blank-ambassade-site {
   font-size: 15px;
   box-sizing: border-box;
-  color: #bbbbbb;
+  color: #fed8b1;
+  margin-left: 2px;
 }
 
 .icon {
