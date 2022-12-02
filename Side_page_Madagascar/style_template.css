@@ -39,7 +39,7 @@ h1 {
 :root {
   --height-menu: 60px;
   --bcg-color-navbar: transparent;
-  --font-color-navbar: white;
+  --font-color-navbar: black;
   --bcg-color-sub-menu: rgba(255, 255, 255, 0.7);
   --font-color-sub-menu: rgba(33, 112, 214, 0.8);
   --border-bottom-color: rgba(33, 112, 214, 0.8);
@@ -92,6 +92,7 @@ li a {
 }
 .dropdown-1:hover > a:after {
   animation: rotatearrow 0.2s linear forwards;
+  color: grey;
 }
 @keyframes rotatearrow {
   0% {
@@ -171,10 +172,11 @@ li a {
 }
 .container-left p {
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 19px;
   letter-spacing: 2px;
   color: white;
-  -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+  font-weight: bold;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 
 /* ##### Carousel ###### */
