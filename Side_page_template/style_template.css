@@ -7,8 +7,22 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins";
-  color: rgb(201, 201, 201);
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  color: #fafafa;
+  background: #141e30;
+  background: -webkit-linear-gradient(to right, #141e30, #243b55);
+  background: linear-gradient(to right, #141e30, #243b55); 
+  background-repeat: none;
+}
+
+header {
+  background: url(assets/pikrepo.jpg);
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
 }
 
 section {
@@ -16,8 +30,8 @@ section {
   padding-top: 50px;
 }
 h1 {
-  font-family: "Poppins";
-  font-size: 4vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 8vh;
   font-weight: bold;
   margin-bottom: 3vh;
 }
@@ -38,7 +52,7 @@ h1 {
 * {
   margin: 0px;
   padding: 0px;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -46,6 +60,7 @@ nav {
   font-size: 18px;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 nav > ul {
@@ -165,6 +180,8 @@ li a {
   flex-direction: row;
   padding: 20px 50px;
   flex-wrap: wrap;
+  background-size: 100%;
+
 }
 
 .container-left {
@@ -172,8 +189,17 @@ li a {
 }
 
 .container-left h1 {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 70px;
+  color: rgb(247, 247, 247);
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+.container-left p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color:white;
+  -webkit-text-stroke: 0.5px rgb(0, 0, 0);
 }
 
 /* ##### Carousel ###### */
@@ -181,8 +207,8 @@ li a {
 .container-right {
   position: relative;
   perspective: 1000px;
-  margin-left: 450px;
-  margin-top: 30px;
+  margin-left: 525px;
+  margin-top: 450px;
 }
 
 #carousel {
@@ -193,6 +219,7 @@ li a {
   transition: transform 1s;
   transform: rotateY(-360deg) translateZ(+300px);
   animation: animate 25s steps(10000, end) infinite;
+  z-index: 0;
 }
 #carousel:hover {
   animation-play-state: paused;
@@ -245,7 +272,7 @@ li a {
 /* ##### Cities ##### */
 
 .blank-container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   }
   
@@ -257,8 +284,9 @@ li a {
   font-size: 18px;
   text-align: center;
   font-weight: bold;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Roboto', sans-serif;
   font-size: 50px;
+  margin-top: 50px;
   }
   
   .blank-countries-slider {
@@ -292,6 +320,7 @@ li a {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 15px;
   }
   
   .blank-active {
@@ -359,8 +388,9 @@ li a {
   font-size: 20px;
   box-sizing: border-box;
   margin: 10px 0;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Roboto', sans-serif;
   font-size: 30px;
+  text-decoration: underline;
 }
 
 .blank-ambassade-info {
@@ -386,6 +416,7 @@ li a {
 .blank-ambassade-site {
   font-size: 15px;
   box-sizing: border-box;
+  color: #bbbbbb;
 }
 
 .icon {
@@ -401,7 +432,7 @@ li a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background: url(assets/food_table.jpg);
+  background: url(https://lexpress.mg/wp-content/plugins/wonderm00ns-simple-facebook-open-graph-tags/fbimg.php?is_home=0&is_front_page=0&object_type=post&post_id=124414&object_id=124414&img=https%253A%252F%252Flexpress.mg%252Fwp-content%252Fuploads%252F2021%252F08%252Fvary.jpg);
   background-size: 100%;
   margin: 100px 0;
 }
@@ -411,6 +442,7 @@ li a {
   width: auto;
   margin: 0 50px;
   position: relative;
+  border-radius: 50%;
 }
 
 /* ############ END FOOD SECTION ###########*/
