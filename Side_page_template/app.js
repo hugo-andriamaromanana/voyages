@@ -15,22 +15,22 @@ window.addEventListener('scroll', function(){
 
 /* ##### Cities ##### */
 
-const content = document.querySelectorAll('.blank-country');
-const tab = document.querySelectorAll('.blank-link');
-const slider = document.querySelector('.blank-countries-slider');
+const content = document.querySelectorAll('.mada-country');
+const tab = document.querySelectorAll('.mada-link');
+const slider = document.querySelector('.mada-countries-slider');
 
 function hideTabContent() {
   content.forEach(item => {
     item.style.display = 'none';
   });
   tab.forEach(item => {
-    item.classList.remove('blank-active');
+    item.classList.remove('mada-active');
   });
 }
 
 function showTabContent(i = 0) {
   content[i].style.display = 'grid';
-  tab[i].classList.add('blank-active');
+  tab[i].classList.add('mada-active');
 }
 
 

@@ -271,16 +271,16 @@ li a {
 
 /* ##### Cities ##### */
 
-.blank-container {
+.mada-container {
   max-width: 1000px;
   margin: 0 auto;
   }
   
-  .blank-countries {
+  .mada-countries {
    padding: 2rem 0;
   }
   
-  .blank-header {
+  .mada-header {
   font-size: 18px;
   text-align: center;
   font-weight: bold;
@@ -289,7 +289,7 @@ li a {
   margin-top: 50px;
   }
   
-  .blank-countries-slider {
+  .mada-countries-slider {
    margin: 20px 0;
    display: flex;
    flex-wrap: wrap;
@@ -300,15 +300,15 @@ li a {
    align-items: center;
   }
   
-  .blank-countries-slider a {
+  .mada-countries-slider a {
   cursor: pointer;
   }
   
-  .blank-countries-slider a:hover {
+  .mada-countries-slider a:hover {
   font-size: 18px;
   }
   
-  .blank-country {
+  .mada-country {
   margin: 20px 0;
   display: grid;
   grid-template: repeat(1, 250px)/repeat(3, 1fr);
@@ -316,14 +316,14 @@ li a {
   justify-content: space-around;
   }
   
-  .blank-country img {
+  .mada-country img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 15px;
   }
   
-  .blank-active {
+  .mada-active {
   font-size: 18px;
   border: solid 1px;
   padding: 5px;
@@ -334,7 +334,7 @@ li a {
 
 /* ##### AMBASSADE ##### */
 
-.blank-ambassade-box {
+.mada-ambassade-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -345,13 +345,13 @@ li a {
   flex-direction: row;
 }
 
-.blank-ambassade-box-left {
+.mada-ambassade-box-left {
   flex-direction: column;
   box-sizing: border-box;
   width: 20vw;
 }
 
-.blank-ambassade-sommaire {
+.mada-ambassade-sommaire {
   box-sizing: border-box;
   width: 100%;
   align-items: flex-start;
@@ -360,7 +360,7 @@ li a {
   line-height: 20px;
 }
 
-.blank-ambassade {
+.mada-ambassade {
   width: 20vw;
   height: 30vh;
   border-radius: 25px;
@@ -368,7 +368,7 @@ li a {
   padding: 5px;
 }
 
-.blank-ambassade-box-right {
+.mada-ambassade-box-right {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -376,14 +376,14 @@ li a {
   width: 35vw;
 }
 
-.blank-ambassade-maps {
+.mada-ambassade-maps {
   width: 23vw;
   height: 35vh;
   box-sizing: border-box;
   border-radius: 15px;
 }
 
-.blank-ambassade-contact {
+.mada-ambassade-contact {
   text-align: center;
   font-size: 20px;
   box-sizing: border-box;
@@ -393,7 +393,7 @@ li a {
   text-decoration: underline;
 }
 
-.blank-ambassade-info {
+.mada-ambassade-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -401,19 +401,19 @@ li a {
   line-height: 20px;
 }
 
-.blank-ambassade-adresse {
+.mada-ambassade-adresse {
   font-size: 15px;
   box-sizing: border-box;
 }
 
-.blank-ambassade-numero {
+.mada-ambassade-numero {
   font-size: 15px;
   box-sizing: border-box;
   margin-right: 20px;
   text-align: start;
 }
 
-.blank-ambassade-site {
+.mada-ambassade-site {
   font-size: 15px;
   box-sizing: border-box;
   color: #bbbbbb;
@@ -428,7 +428,7 @@ li a {
 
 /* ############ FOOD SECTION ###########*/
 
-.blank-food {
+.mada-food {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -437,7 +437,7 @@ li a {
   margin: 100px 0;
 }
 
-.blank-food img {  
+.mada-food img {  
   height: 250px;
   width: auto;
   margin: 0 50px;
