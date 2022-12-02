@@ -131,6 +131,7 @@ main{
         height: 75%;
         left: 0;
         bottom: 0;
+        color: white;
     }
     .txt p{
         margin: 10px 0 0;
