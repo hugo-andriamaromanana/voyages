@@ -8,7 +8,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins";
-  color: rgb(201, 201, 201);
+  color: #fed8b1;
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+  background: url(assets/usa-westerne-leo.jpg);
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 section {
@@ -165,6 +173,8 @@ li a {
   flex-direction: row;
   padding: 20px 50px;
   flex-wrap: wrap;
+  background-size: 100%;
+
 }
 
 .container-left {
@@ -245,7 +255,7 @@ li a {
 /* ##### Cities ##### */
 
 .blank-container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   }
   
@@ -292,6 +302,7 @@ li a {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 15px;
   }
   
   .blank-active {
@@ -386,6 +397,7 @@ li a {
 .blank-ambassade-site {
   font-size: 15px;
   box-sizing: border-box;
+  color: #bbbbbb;
 }
 
 .icon {
