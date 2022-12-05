@@ -22,7 +22,7 @@ header h1 {
   margin-bottom: 3vh;
 }
 header{
-  background-image: url(assets/imgback2.jpg) ;
+  background-image: url(/assets/assets-vietnam/imgback2.jpg) ;
   height: 100vh;
  overflow: hidden;
  padding: 0;
