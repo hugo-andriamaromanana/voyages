@@ -331,17 +331,17 @@ main{
 
 /* ##### Cities ##### */
 
-.blank-container {
+.vietnam-container {
   max-width: 1600px;
   margin: 0 auto;
   padding-top: 5%;
   }
   
-  .blank-countries {
+  .vietnam-countries {
    padding: 2rem 0;
   }
   
-  .blank-header {
+  .vietnam-header {
   font-size: 18px;
   text-align: center;
   font-weight: bold;
@@ -349,7 +349,7 @@ main{
   font-size: 50px;
   }
   
-  .blank-countries-slider {
+  .vietnam-countries-slider {
    margin: 20px 0;
    display: flex;
    flex-wrap: wrap;
@@ -360,15 +360,15 @@ main{
    align-items: center;
   }
   
-  .blank-countries-slider a {
+  .vietnam-countries-slider a {
   cursor: pointer;
   }
   
-  .blank-countries-slider a:hover {
+  .vietnam-countries-slider a:hover {
   font-size: 18px;
   }
   
-  .blank-country {
+  .vietnam-country {
   margin: 20px 0;
   display: grid;
   grid-template: repeat(1, 300px)/repeat(3, 1fr);
@@ -378,14 +378,14 @@ main{
 
   }
   
-  .blank-country img {
+  .vietnam-country img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 2%;
   }
   
-  .blank-active {
+  .vietnam-active {
   font-size: 18px;
   border: solid 1px;
   padding: 5px;
@@ -396,7 +396,7 @@ main{
 
 /* ##### AMBASSADE ##### */
 
-.blank-ambassade-box {
+.vietnam-ambassade-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -408,14 +408,14 @@ main{
   margin-bottom: 10%;
 }
 
-.blank-ambassade-box-left {
+.vietnam-ambassade-box-left {
   flex-direction: column;
   box-sizing: border-box;
   width: 20vw;
 
 }
 
-.blank-ambassade-sommaire {
+.vietnam-ambassade-sommaire {
   box-sizing: border-box;
   width: 100%;
   align-items: flex-start;
@@ -429,7 +429,7 @@ main{
   color: #ffffff;
   margin-bottom: 1%;
 }
-.blank-ambassade {
+.vietnam-ambassade {
   width: 20vw;
   height: 30vh;
   border-radius: 25px;
@@ -437,7 +437,7 @@ main{
   padding: 5px;
 }
 
-.blank-ambassade-box-right {
+.vietnam-ambassade-box-right {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -445,14 +445,14 @@ main{
   width: 35vw;
 }
 
-.blank-ambassade-maps {
+.vietnam-ambassade-maps {
   width: 23vw;
   height: 35vh;
   box-sizing: border-box;
   border-radius: 15px;
 }
 
-.blank-ambassade-contact {
+.vietnam-ambassade-contact {
   text-align: center;
   font-size: 20px;
   box-sizing: border-box;
@@ -461,7 +461,7 @@ main{
   font-size: 30px;
 }
 
-.blank-ambassade-info {
+.vietnam-ambassade-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -469,19 +469,19 @@ main{
   line-height: 20px;
 }
 
-.blank-ambassade-adresse {
+.vietnam-ambassade-adresse {
   font-size: 15px;
   box-sizing: border-box;
 }
 
-.blank-ambassade-numero {
+.vietnam-ambassade-numero {
   font-size: 15px;
   box-sizing: border-box;
   margin-right: 20px;
   text-align: start;
 }
 
-.blank-ambassade-site {
+.vietnam-ambassade-site {
   font-size: 15px;
   box-sizing: border-box;
 }
@@ -495,7 +495,7 @@ main{
 
 /* ############ FOOD SECTION ###########*/
 
-.blank-food {
+.vietnam-food {
   margin-top: 10%;
   display: flex;
   flex-direction: row;
@@ -505,7 +505,7 @@ main{
   margin: 100px 0;
 }
 
-.blank-food img {  
+.vietnam-food img {  
   height: 250px;
   width: auto;
   margin: 0 200px;
