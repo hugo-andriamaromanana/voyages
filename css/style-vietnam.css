@@ -22,7 +22,7 @@ header h1 {
   margin-bottom: 3vh;
 }
 header{
-  background-image: url(/assets/assets-vietnam/imgback2.jpg) ;
+  background-image: url(../assets/assets-vietnam/imgback2.jpg) ;
   height: 100vh;
  overflow: hidden;
  padding: 0;
@@ -500,7 +500,7 @@ main{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background: url(assets/food_table.jpg);
+  background: url(../assets/food_table.jpg);
   background-size: 100%;
   margin: 100px 0;
 }
