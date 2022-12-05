@@ -428,7 +428,7 @@ li a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background: url(assets/usa-verkbgfuv-leo.png);
+  background: url(/assets/assets-usa/usa-verkbgfuv-leo.png);
   background-position: center;
   background-size: cover;
   margin: 100px 0;
