@@ -263,16 +263,16 @@ li a {
 
 /* ##### Cities ##### */
 
-.blank-container {
+.usa-container {
   max-width: 1000px;
   margin: 0 auto;
   }
   
-  .blank-countries {
+  .usa-countries {
    padding: 2rem 0;
   }
   
-  .blank-header {
+  .usa-header {
   font-size: 18px;
   text-align: center;
   font-weight: bold;
@@ -280,7 +280,7 @@ li a {
   font-size: 50px;
   }
   
-  .blank-countries-slider {
+  .usa-countries-slider {
    margin: 20px 0;
    display: flex;
    flex-wrap: wrap;
@@ -291,15 +291,15 @@ li a {
    align-items: center;
   }
   
-  .blank-countries-slider a {
+  .usa-countries-slider a {
   cursor: pointer;
   }
   
-  .blank-countries-slider a:hover {
+  .usa-countries-slider a:hover {
   font-size: 18px;
   }
   
-  .blank-country {
+  .usa-country {
   margin: 20px 0;
   display: grid;
   grid-template: repeat(1, 250px)/repeat(3, 1fr);
@@ -307,14 +307,14 @@ li a {
   justify-content: space-around;
   }
   
-  .blank-country img {
+  .usa-country img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 15px;
   }
   
-  .blank-active {
+  .usa-active {
   font-size: 18px;
   border: solid 1px;
   padding: 5px;
@@ -325,7 +325,7 @@ li a {
 
 /* ##### AMBASSADE ##### */
 
-.blank-ambassade-box {
+.usa-ambassade-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,13 +336,13 @@ li a {
   flex-direction: row;
 }
 
-.blank-ambassade-box-left {
+.usa-ambassade-box-left {
   flex-direction: column;
   box-sizing: border-box;
   width: 20vw;
 }
 
-.blank-ambassade-sommaire {
+.usa-ambassade-sommaire {
   box-sizing: border-box;
   width: 100%;
   align-items: flex-start;
@@ -352,7 +352,7 @@ li a {
   padding: 5px;
 }
 
-.blank-ambassade {
+.usa-ambassade {
   width: 250px;
   height: 170px;
   border-radius: 15px;
@@ -360,7 +360,7 @@ li a {
   box-shadow: -10px 5px 10px #b8b6b6;
 }
 
-.blank-ambassade-box-right {
+.usa-ambassade-box-right {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -368,7 +368,7 @@ li a {
   width: 35vw;
 }
 
-.blank-ambassade-maps {
+.usa-ambassade-maps {
   width: 250px;
   height: 200px;
   box-sizing: border-box;
@@ -376,7 +376,7 @@ li a {
   box-shadow: 10px 5px 10px  #b8b6b6;
 }
 
-.blank-ambassade-contact {
+.usa-ambassade-contact {
   text-align: center;
   font-size: 20px;
   box-sizing: border-box;
@@ -385,7 +385,7 @@ li a {
   font-size: 30px;
 }
 
-.blank-ambassade-info {
+.usa-ambassade-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -393,14 +393,14 @@ li a {
   line-height: 20px;
 }
 
-.blank-ambassade-adresse {
+.usa-ambassade-adresse {
   font-size: 15px;
   box-sizing: border-box;
   margin-top: 2px;
   margin-left: 2px;
 }
 
-.blank-ambassade-numero {
+.usa-ambassade-numero {
   font-size: 15px;
   box-sizing: border-box;
   margin-right: 20px;
@@ -408,7 +408,7 @@ li a {
   margin-left: 2px;
 }
 
-.blank-ambassade-site {
+.usa-ambassade-site {
   font-size: 15px;
   box-sizing: border-box;
   color: #fed8b1;
@@ -424,7 +424,7 @@ li a {
 
 /* ############ FOOD SECTION ###########*/
 
-.blank-food {
+.usa-food {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -436,7 +436,7 @@ li a {
   width: 100%;
 }
 
-.blank-food img {  
+.usa-food img {  
   height: 200px;
   width: auto;
   margin: 0 50px;
